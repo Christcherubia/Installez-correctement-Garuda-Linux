@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link href="./assets/bootstrap.css" rel="stylesheet" />
+
+    <title>Fichier d'installation Garuda Linux</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Installez Garuda Linux Correctement</h1>
+    </header>
+
+    <main>
+      <div class="preInstall">
+        <h2>Pré-installation (partitionnement manuel) :</h2>
+        <ul>
+          <li>Tout mettre en GPT.</li>
+          <li>8Mio, Unformated, /Bios_Grub.</li>
+          <li>
+            Même quantité que la Ram physique (ex: 4096Mio = 4Go); LinuxSwap,
+            Swap.
+          </li>
+          <li>
+            Environ la moitier de la partition restante (ex : 121392MiB); Btrfs, /, /Root
+          </li>
+          <li>Le reste de la partition (ex : 91123MiB); Btrfs, /home.</li>
+        </ul>
+      </div>
+
+      <div class="CommandesUtiles">
+        <h2>Les Commandes utiles :</h2>
+          <li>Passer en mode root avec : " su " ou " su - root " .</li>
+          <li>Installer linux header avec " pacman -S linux-headers " .</li>
+          <li>
+            Faire les commandes " modprob vboxdrv " pour réparer l'erreur
+            "rc=- 1908" dans Virtual Box.
+          </li>
+          <li>
+            sudo pacman -Syy (mise à jour de la base de données logicielle du
+            système).
+          </li>
+          <li>sudo pacman -Syu (mise à jour et mise à niveau du système).</li>
+        </ol>
+      </div>
+      <div class="chosesFaire">
+        <h2>Les 7 choses à faires après l'installation :</h2>
+        <p>1) Metre à jour et à niveau tout le système y compris les bases de données logicielles avec " sudo pacman -Syyu
+          " puis redémarrer avec " reboot ". <br />  
+          2) Optimiser les Mirroirs AUR avec " sudo micro
+          /etc/pacman.d/chaotic-mirrorlist " en commentant " # " les pays les
+          plus éloignés. <br /> 
+          3) Configurer BTRFS Assistant ou TimeShift. <br /> 
+          4) Activer "Couleur de nuit" (Night color). <br /> 
+          5) Désactiver le délait du Grub (5 à 1 seconde) pour optimiser la
+          vitesse de démarrage. <br /> 
+          6) Nettoyer le système avec System Cleaner, Clear package cache et
+          Clear caches. <br /> 
+          7) Configurer son bureau et la gestion de ses applications comme il
+          se doit, selon nos attentes !</p>
+      </div>
+    </main>
+
+    <div class="Astuce">
+    <footer>
+      <dl>
+        <h3>Astuces, informations complémentaires et sites web :</h3>
+        <dt>Créer une clé bootable (amorçable) en n'oubliant pas de la formatter si besoin est, et flasher la avec Rufus ou Etcher.
+        </dt><br />
+        <dt>Je vous rappel que seul les versions "Dr460nized" sont stable à l'heure ou, j'ai mis en ligne la vidéo.
+        </dt><br />
+        <dt>
+          Site web des commandes "Pacman" les plus utiles sous Arch Linux : <a href="https://www.linuxshelltips.com/archlinux-pacman-cheatsheet/" target="_blank" 
+          style="color: bisque;">ArchLinux-Pacman-CheatSheet</a>
+        </dt> <br />
+        <dt>Pour toutes demandes vous pouvez me contacter dans les commentaires YouTube ou par email à l'adresse : christophermarcillaud@gmx.fr
+        </dt><br />
+        <dt>
+          Site Web :
+          <a href="https://www.christocodeandcraft.com" target="_blank"
+          style="color:bisque;">christocode&craft</a
+          >
+        </dt>
+      </dl>
+    </footer>
+  </div>
+    <em>By - Jesus-Christ with &copy;ChristoCode&Craft ; 2022/27/03 .</em>
+  </body>
+</html>

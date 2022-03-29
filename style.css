@@ -1,0 +1,105 @@
+/*
+-Titre et Body
+- Pré-installation
+- 7 choses à faire
+- Les commandes utiles
+- Footer 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@200&family=Open+Sans:ital@1&display=swap");
+
+/************* Titre et Body *************/
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  color: rgba(50, 255, 187, 0.747);
+  margin: 90px 90px 0px 50px;
+  padding-bottom: 50px;
+}
+
+body {
+  margin: 10px 2px;
+  padding: 15px;
+  background: url(./media/Screenshot_1.png) no-repeat fixed top/cover;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+main {
+  height: 560px;
+  width: 90%;
+  margin: 5px 90px 35px 5px;
+  padding: 15px 20px 200px 35px;
+  background: rgba(52, 52, 52, 0.496);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem bold;
+  border-radius: 25px;
+  box-shadow: 2px 0px 12px 3px rgb(0, 0, 30);
+}
+
+h2 {
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+}
+
+/************** Pré-installation ************/
+
+.preInstall {
+  display: grid;
+  justify-content: start;
+  padding: 2px 15px;
+  color: #f0f0f0f1;
+  text-shadow: 3px 5px 2px #232222b8;
+}
+
+/************** Les commandes utiles *******************/
+
+.CommandesUtiles {
+  font-family: "Open sans", sans-serif;
+  max-width: 580px;
+  margin: 10px 0px 2px 0px;
+  padding: 3px 15px;
+  list-style-type: none;
+  color: #ffca689e;
+  text-shadow: 3px 5px 2px #0f0f0fdb;
+  border-radius: 12px;
+  border: solid rgb(101, 101, 101);
+  -webkit-box-shadow: 2px 2px 5px 2px #000000;
+  box-shadow: 3px 2px 6px 2px rgba(23, 23, 23, 0.632);
+}
+
+/*********** 7 choses à faire ***********/
+
+.chosesFaire {
+  display: grid;
+  color: #ffffff;
+  text-shadow: 0 -1px 4px #fff, 0 -2px 7px #ff0, 0 -10px 17px #ff8000,
+    0 -18px 40px #f00;
+  padding: -15px -10px;
+}
+
+/************** Footer *****************/
+
+.Astuce {
+  max-width: 550px;
+  margin: 15px;
+  padding: 5px 5px 1px 15px;
+  border-radius: 12px;
+  color: antiquewhite;
+  background: rgba(181, 181, 181, 0.245);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+em {
+  padding: 15px 25px;
+  font-family: "Hurricane", cursive;
+  color: #444444;
+  text-shadow: 1px 0px 1px #9f9f9fa7, 0px 1px 1px #7a7a7ad9, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #4a4a4ad4, 1px 2px 1px #eeeeee,
+    3px 2px 1px #363636b6, 3px 3px 1px #eeeeee, 2px 3px 1px #171717;
+}
